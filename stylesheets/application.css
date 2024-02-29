@@ -1,0 +1,256 @@
+@import url(../../../stylesheets/application.css);
+@import url('https://fonts.googleapis.com/css2?family=Figtree&display=swap');
+#block-activity{
+    border: none;
+}
+
+#block-activity .contextual + h3{
+    border-bottom: 2px solid #dacece;
+    padding-bottom: 2rem;
+    padding-left: 2em;
+    
+}
+#block-activity .contextual + h3 a{
+    font-size: 20px;
+    color: #000 !important;
+}
+#sidebar{
+    display: none;
+}
+
+#activity {
+    width: 100%;
+    font-family: 'Figtree', sans-serif;
+  }
+  .subtitle{
+    display: none;
+  }
+  #activity h3{
+    margin-bottom: 0;
+    padding: 10px !important;
+    /* background: #e6f3fa !important; */
+    background: hsl(200, 48%, 88%) !important;
+  }
+
+  #activity dl{
+    /* background: #e6f3fa !important; */
+    background: hsl(200, 48%, 88%);
+    display: block;
+    margin-top: 0px;
+    margin-left: 0px !important;
+    padding: 3.5rem;
+    padding-top: 1rem;
+    margin-bottom: 20px;
+  }
+
+#activity .project{
+    color: rgb(30, 30, 122);
+    display: block;
+    margin-left: 35px;
+    font-size: 17px !important;
+    font-weight: 600;
+    margin-bottom: 12px;
+  }
+  #activity .icon{
+    padding-left: 0px;
+  }
+  #activity .icon-issue{
+    background-position:0 important;
+    /* position: relative !important; */
+
+  }
+  
+  #activity .time{
+    position: relative;
+    display: block !important;
+    border-bottom: none !important;
+    margin-left: 35px;
+    /* margin-top: 20px; */
+    margin-bottom: 10px;
+    font-size: 15px !important;
+    background-image: url(../images/bug-fill.svg);
+    background-repeat: no-repeat;
+  }
+  #activity .time:before {
+    content: url('../image/bug-fill.svg');
+    margin-right: 5px;
+    margin-bottom: 15px;
+    display: block;
+  }
+  #activity dt{
+    margin-bottom: 12px;
+  }
+  #activity dt a{
+    color: #000;
+    font-size: 15px;
+    margin-left: 35px;
+  }
+
+  #activity .description{
+    background-color: #ffffff;
+    padding: 5px;
+    padding-left: 15px;
+    border-radius: 7px;
+    font-size: 12px;
+    font-style: normal !important;
+  }
+  #activity .description:empty{
+    display: none;
+  }
+  #activity dd{
+    padding-left: 0 !important;
+    margin-left: 35px;
+    margin-bottom: 0;
+  }
+  #activity .author a{
+    color: #808080;
+    font-size: 16px;
+  }
+  #activity .author{
+    padding-bottom: 10px !important;
+    display: block;
+   margin-top: 20px !important;
+   border-bottom: 1px solid #808080;
+  }
+
+  /* Project Page Style */
+
+  
+  #project-index{
+    font-family: 'Figtree', sans-serif;
+  }
+
+  li .root .leaf{
+    color: #000;
+  }
+  li .root .leaf::before{
+    content: url('../image/back.svg');  
+    margin-right: 10px;
+  }
+
+  /* #projects-index ul li .root{
+    width: 160 !important;
+  } */
+
+  .controller-projects div.custom-details > div:not(.issues-info):not(.project-members){
+    background-image: none;
+    position: relative;
+  }
+  .controller-projects div.custom-details > div.qa-lead{
+    position: relative;
+    background-image: none !important;
+    padding-left: 0 !important;
+    margin-top: 20px;
+  }
+  .controller-projects div.custom-details > div.qa-lead::before {
+    content: "Qa Lead";
+    position: absolute;
+    bottom: 30px;
+    font-weight: 400;
+    color: rgb(156, 163, 185);
+  }
+  .controller-projects div.custom-details > div.project-lead{
+    background-image: none !important;
+    position: relative;
+  }
+  .controller-projects div.custom-details > div.project-lead::before {
+    content: "Project Manager";
+    position: absolute;
+    bottom: 30px;
+    font-weight: 400;
+    color: rgb(156, 163, 185);
+  }
+
+  .controller-projects div.custom-details > div.project-manager{
+    background-image: none !important;
+    position: relative;
+    margin-top: 15px;
+    padding-left: 0 !important;
+  }
+  .controller-projects div.custom-details > div.project-manager::before {
+    content: "Project Lead";
+    position: absolute;
+    bottom: 30px;
+    font-weight: 400;
+    color: rgb(156, 163, 185);
+  }
+  .controller-projects div.custom-details > div.start-date{
+    background-image: none !important;
+  }
+  .custom-details >.start-date::before {
+    content: "Start Date ";
+    font-weight: 400;
+    color: rgb(156, 163, 185);
+    border-bottom: 1px solid black;
+}
+.controller-projects div.custom-details > div.start-date{
+  padding: 0px !important;
+}
+
+.controller-projects div.custom-details > div.end-date::before {
+  content: "Delivery Date";
+  position: absolute;
+  bottom: 30px;
+  font-weight: 400;
+  color: rgb(156, 163, 185);
+}
+
+.controller-projects div.custom-details > div.end-date+hr{
+  display: none;
+}
+
+.custom-details .project-member{
+  clear: both;
+}
+
+.custom-details .project-member a#span-user{
+  color: #fff;
+
+}
+
+.controller-projects .progress-bar{
+  width: 100%;
+}
+
+.controller-projects .progress-bar-closed{
+  margin-bottom: 5px;
+}
+.controller-projects span.progress-bar-result {
+  float: none;
+  margin: 0;
+}
+.controller-projects .progress_result{
+  display: inline;
+  float: right;
+}
+
+.controller-projects #projects-index ul.projects li.root{
+  height: 285px;
+  background-color: azure;
+} 
+
+.controller-projects div.custom-details > div.project-members{
+  margin-top: 10px;
+  position: relative;
+}
+
+.controller-projects div.custom-details > div.project-members::after {
+  content: "Project Members";
+  position: absolute;
+  top: 37px;
+  font-weight: 400;
+  color: rgb(156, 163, 185);
+}
+
+.controller-projects div.custom-details > div.project-members #span-user{
+  float: left;
+}
+.controller-projects .project-members > span:first-child{
+  background-color: #f7b7a0 !important;
+}
+.controller-projects .project-members > span:nth-child(2){
+  background-color: #a7e4cf !important;
+}
+.controller-projects .project-members > span:nth-child(3){
+  background-color: rgb(174, 174, 174) !important;
+}
